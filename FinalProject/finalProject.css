@@ -1,0 +1,276 @@
+head{
+    font-family: 'Athiti';
+}
+
+#div_roundbar{
+    margin-top: document.GetElementByID('w3-top').style.getPropertyValue('height');
+    align-content: center;
+}
+
+#roundBar{
+    align-content: center;
+    text-align: center;
+}
+#totalContent{
+    float: right;
+}
+.paragraph{
+    font-family: 'Athiti';
+    font-size: 20;
+    margin: 20;
+    position: static;
+    margin-left: center;
+    margin-right: center;
+}
+.homeHeader{
+    font-family: 'Athiti';
+    text-align: center;
+}
+#hereLink{
+    color: blue;
+}
+.w3-top{
+    background-color: #B7BFBB;
+    
+}
+.w3-left{
+    margin-left: 30px;
+}
+#transparent{
+    width:100%;
+    
+}
+#xgazevideo{
+    float:right;
+    margin-right: 30%;
+    margin-left: 30%;
+    margin-bottom: 3%;
+
+}
+
+#linkBox{
+    width: 50%;
+    height:55px;
+    background-color: #4c6a77;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    position:center;
+    float:static;
+}
+ #originallinkBox{
+    width: 50%;
+    height:55px;
+    background-color: #4c6a77;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    position:center;
+    float:static;
+}
+#totalBox{
+    position: static;
+    
+}
+#innerText{
+    align-content: center;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Athiti';
+    margin-left: 10%;
+}
+#tictacImage{
+    align-items: middle;
+}
+#oldwell{
+    margin-bottom: 30%;
+}
+#mainhead{
+    margin-top: -50px;
+    color:white;
+    font-size: 45;
+    font-family: 'Athiti';
+    margin-bottom: 30px;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+#newbar {
+    background: #B7BFBB;
+    padding: 20px; 
+    width: 100%;
+    height: document.GetElementByID('w3-top').style.getPropertyValue('height'); 
+    
+}
+
+.thisbutton{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #4c6a77;
+  border-radius: 30px;
+  font-size: 24px;
+  font-family: 'Athiti';
+  font-weight: 300;
+  
+  margin: 5em auto;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-bottom: 3%;
+  margin-top:50px;
+  padding-bottom: 3%
+  
+  position:static; 
+  top:0; right:0; bottom:0; left:0;
+  
+  padding: 20px ;
+  width: 200px;
+  height:30px;
+
+  background: #4c6a77;
+  border: 1px solid #4c6a77;
+  color: #FFF;
+  overflow: hidden;
+  
+  transition: all 0.5s;
+}
+
+
+.thisbutton:hover, .thisbutton:active 
+{
+  text-decoration: none;
+  color: #4c6a77;
+  border-color: #4c6a77;
+  background: #FFF;
+}
+
+.thisbutton span 
+{
+  display: inline-block;
+  position: relative;
+  padding-right: 0;
+  
+  transition: padding-right 0.5s;
+}
+
+.thisbutton span:after 
+{
+  content: ' ';  
+  position: absolute;
+  top: 0;
+  right: -18px;
+  opacity: 0;
+  width: 10px;
+  height: 10px;
+  margin-top: -10px;
+
+  background: rgba(0, 0, 0);
+  border: 3px solid #FFF;
+  border-top: none;
+  border-right: none;
+
+  transition: opacity 0.5s, top 0.5s, right 0.5s;
+  transform: rotate(-45deg);
+}
+
+.thisbutton:hover span, .thisbutton:active span 
+{
+  padding-right: 30px;
+}
+
+.thisbutton:hover span:after, .thisbutton:active span:after 
+{
+  transition: opacity 0.5s, top 0.5s, right 0.5s;
+  opacity: 1;
+  border-color: #4c6a77;
+  right: 0;
+  top: 50%;
+}
+
+
+
+
+/*change*/
+.leftButton{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #4c6a77;
+  border-radius: 30px;
+  font-size: 24px;
+  font-family: 'Athiti';
+  font-weight: 300;
+  
+  margin: 5em auto;
+  margin-bottom: 3%;
+  margin-top:50px;
+  margin-right: 3%;
+  padding-bottom: 3%
+  
+  position:static; 
+  top:0; right:0; bottom:0; left:0;
+  
+  padding: 20px ;
+  width: 200px;
+  height:30px;
+
+  background: #4c6a77;
+  border: 1px solid #4c6a77;
+  color: #FFF;
+  overflow: hidden;
+  
+  transition: all 0.5s;
+}
+
+
+.leftButton:hover, .leftButton:active 
+{
+  text-decoration: none;
+  color: #4c6a77;
+  border-color: #4c6a77;
+  background: #FFF;
+}
+
+.leftButton span 
+{
+  display: inline-block;
+  position: relative;
+  padding-right: 0;
+  
+  transition: padding-right 0.5s;
+}
+
+.leftButton span:after 
+{
+  content: ' ';  
+  position: absolute;
+  top: 0;
+  right: -18px;
+  opacity: 0;
+  width: 10px;
+  height: 10px;
+  margin-top: -10px;
+
+  background: rgba(0, 0, 0);
+  border: 3px solid #FFF;
+  border-top: none;
+  border-right: none;
+
+  transition: opacity 0.5s, top 0.5s, right 0.5s;
+  transform: rotate(-45deg);
+}
+
+.leftButton:hover span, .leftButton:active span 
+{
+  padding-right: 30px;
+}
+
+.leftButton:hover span:after, .leftButton:active span:after 
+{
+  transition: opacity 0.5s, top 0.5s, right 0.5s;
+  opacity: 1;
+  border-color: #4c6a77;
+  right: 0;
+  top: 50%;
+}
+
+
+
