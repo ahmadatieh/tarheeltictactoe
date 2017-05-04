@@ -1,19 +1,12 @@
 <!DOCTYPE html>
-<html >
-<head>
-  <meta charset="UTF-8">
-  <title>Memory Game</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-
-  <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Anton'>
-
-      <link rel="stylesheet" href="css/style.css">
-
- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+<html>
+  <head><title>Tarheel Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
     
-    <link rel = 'stylesheet' type = 'text/css' href = 'styles/ui.css'>
+      
     <link rel ="stylesheet" href="finalProject.css">  
+      
+    <link rel = 'stylesheet' type = 'text/css' href = 'styles/ui.css'> 
       
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -21,54 +14,148 @@
     <link rel="stylesheet" href="w3.css">
     <link href='//fonts.googleapis.com/css?family=Athiti' rel='stylesheet'>
     <script src="homepage.js"></script>
-  
-    
-         <!---- NAV BAR ----> 
-  
+      
+      
+      
+      
+        <!---- NAV BAR ----> 
+
 <div class="w3-top">
   <ul class="w3-navbar w3-wide w3-padding-9 w3-card-2">
     <li>
-      <a href="homepage.html" class="w3-margin-left"><b>TARHEEL TIC-TAC-TOE</b> </a>
+      <a href="index.html" class="w3-margin-left"><b>TARHEEL TIC-TAC-TOE</b> </a>
     </li>
-    <!-- Float links to the right. Hide them on small screens -->
+    
     <li class="w3-right w3-hide-small">
+      <a href="index.html" class="w3-left">Home</a>
       <a href="about.html" class="w3-left">About</a>
       <a href="download.html" class="w3-left">Download</a>
-      <a href="game.html" class="w3-left">Play</a>
-      <a href="index.html" class="w3-left w3-margin-right">Matching Game</a>
+      <a href="game.html" class="w3-left w3-margin-right">Play</a>
+      <a href="matching.html" class="w3-left w3-margin-right">Bonus: Matching Game!</a>
     </li>
   </ul>
 </div>
+
+  </head>
     
+  <body>
+
+
+  <!--Video Content and extra letters on top-->
+<header class="w3-display-container w3-content w3-serif" style="max-width:1500px;" id="home">
+<video width="100%"  loop autoplay>
+  <source src="UNC%20AND%20ME.mp4" type="video/mp4">
+  <source src="UNC%20AND%20ME.mp4" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+    <div class="w3-display-middle w3-margin-top w3-center" style="font-family: helvetica;font-weight: 100;">
+     
+     <script>function focusOnElement(element_id) {
+     $('#div_' + element_id).goTo(); // need to 'go to' this element
+}
+      </script>
+
+
+        <p id = "mainhead"><font size="6"><b>Click to Begin</b></font></p>
+        
+        <input type="image" src="memory-game/OldWell.png" onclick="location.href='about.html';" value="Go to About" />
+
+        <!--<input type="image" src="OldWell.png" alt="old" id = "oldwell" style="width:60% ;height:30%;" onclick="focusOnElement('roundbar');" />
+        <!--<img src="OldWell.png" alt="old" id = "oldwell" style="width:60% ;height:30%;">-->
+  </div>
+</header>
+<!-- End of Video --> 
+
+
+<!-- About the product-->  
+
+<!--      
+<div id= "div_roundbar"><p id = "newbar">
+    <a href="about.html" class="thisbutton" id="aboutButton">
+    <span>About</span>
+    </a>
+    <a href="download.html" class="thisbutton">
+    <span>Download</span>
+    </a>
+    <a href="game.html" class="thisbutton" id="playButton">
+    <span>Play</span>
+    </a>
+</p>      
+</div>      
+<h1 id ="aboutHeader" class ="homeHeader">About The Game</h1>   
+    <p class ="paragraph" >Welcome to Tarheel Tic-Tac-Toe! This game allows users of all abilities to play with an artifically intelligent robot. We have created a Tic-Tac-Toe game at two different levels: Novice and Sensei. If you believe that you have not yet fully trained to battle our very smart Sensei, feel free to begin as a novice player. However, if you feel that you are ready to take on the challenge and battle Sensei AI, he is ready and waiting! <br/><br/> To allow any user to be able to play, we would like you to download the revolutinary Eyetracking and Headtracking software that links to the webcam on any laptop. Before downloading, to learn more about this extension, please click <a href="#downloadHeader" id="hereLink">here</a>! </p>
+
+     
+      <br/><br/><br/>
+<h1 id ="downloadHeader" class = "homeHeader">Download</h1>
+       <p class ="paragraph" >In order to defeat the AI robot, we need to download the amazing google chrome extention from X-labs that allows us to control the mouse through head and eye movement. This will require a slight calibration, but can be done quickly and efficiently! The link to the extension is in the box below! Also, a quick informational video about the extension is embedded below. </p>   
     
-    
-    
-</head>
-  
-<body>
-    
-    <br/><br/><br/>
-    
-    <div class = "fillerBox" id = "leftFillerBox"></div>
-    <div class = "fillerBox" id = "rightFillerBox"></div>
-  <div class="wrap">
-  <div class="game"></div>
-	
-   
-      
-	<div class="modal-overlay">
-		<div class="modal">
-            <br/><br/><br/><br/>
-			<h2 class="winner">You Rock!</h2>
-			<button class="restart">Play Again?</button>
-		</div>
-	</div>
  
-		<p class="disclaimer"> Code Adapted from Nate Wiley</p>
-  </div><!-- End Wrap -->
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <div id = "originallinkBox"><a href ="https://chrome.google.com/webstore/detail/xlabs-headeyegaze-tracker/emeeadaoegehllidjmmokeaahobondco" id= "innerText">www.xlabs.com/googleChromeExtension</a></div>
+     
+      <br/>
+    
+    <iframe id="xgazevideo" width="40%" height="315" src="https://www.youtube.com/embed/kSnAfJWAhtE" frameborder="0" allowfullscreen align="middle"><br/><br/><br/></iframe>
+    
+      
+<div id= totalContent><h1 id ="playHeader" class ="homeHeader">Let's Play!</h1>   
+    <p class ="paragraph" >Let's get Started! After you have set up the Google Chrome extension, and chosen the "mouse" option, choose if you want to begin as a novice or face the Sensei</p>   
+    </div>  
+    
+    <div class = 'main-container'>
+            <div class = 'board'>
+                <!-- data-indx following cell divs represents cell index in 1D array representation 
+                <div class='cell' data-indx = "0" ></div>
+                <div class='cell' data-indx = "1" ></div>
+                <div class='cell' data-indx = "2" ></div>
+                <div class='cell' data-indx = "3" ></div>
+                <div class='cell' data-indx = "4" ></div>
+                <div class='cell' data-indx = "5" ></div>
+                <div class='cell' data-indx = "6" ></div>
+                <div class='cell' data-indx = "7" ></div>
+                <div class='cell' data-indx = "8" ></div>
+            </div>
 
-    <script src="js/index.js"></script>
+            <div class = 'control'>
+                <!-- div.intial displays the starting controls -->
+               
+                <!--<div class = 'intial'>
+                    <div class = 'difficulty'>
+						<span class = 'level not-selected' id = "level1">level1</span>
+						<span class = 'level not-selected' id = "level2">level2</span>
+						<span class = 'level not-selected' id = "level3">level3</span>
+                        <span class = 'level not-selected' id = "novice">Novice</span>
+                        <span class = 'level not-selected' id = "master">Master!</span>
+                    </div>
 
-</body>
+                    <div class='start'> Start </div>
+                </div>
+
+                <!-- div.ingame displays in-game messages and controls 
+                <div class = 'ingame' id="human">It's your turn ...</div>
+                <div class = 'ingame' id="ai">
+                    <img src = "imgs/robot.png" id = "robot" class = "robot" />
+                    <p>Waint for it ...</p>
+                </div>
+                <div class = 'ingame' id="won">You won !</div>
+                <div class = 'ingame' id="lost">You lost !</div>
+                <div class = 'ingame' id="draw">It's a Draw</div>
+            </div>
+			
+			<button style = "height:300px;width:300px" onclick="myFunction()">Play Again!</button>
+
+			<script>
+			function myFunction() {
+				location.reload();
+			}
+			</script>
+        </div>
+		
+
+        <script src = "scripts/jquery-1.10.1.min.js"></script>
+        <script src = "scripts/ui.js"></script>
+        <script src = "scripts/game.js"></script>
+        <script src = "scripts/ai.js"></script>
+        <script src = "scripts/control.js"></script> -->
+  </body>
 </html>

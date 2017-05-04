@@ -23,7 +23,7 @@ $(".level").each(function() {
 /*
  * start game (onclick div.start) behavior and control
  * when start is clicked and a level is chosen, the game status changes to "running"
- * and UI view to swicthed to indicate that it's human's trun to play
+ * and UI view to swicthed to indicate that it's human's turn to play
  */
 $(".start").click(function() {
     var selectedDiffeculty = $('.selected').attr("id");

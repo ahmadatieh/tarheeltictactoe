@@ -13,7 +13,7 @@
 .cell {
     width: 140px;
     height: 140px;
-    border: 2px dashed lightskyblue;
+    border: 2px dashed cornflowerblue;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -36,42 +36,21 @@
 
 .level {
     margin: 0 15px;
-    color: lightskyblue;
+    color: cornflowerblue;
     cursor: pointer;
 }
 
 .not-selected {
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 .not-selected:hover {
     opacity:1;
 }
 
-.start {
-    margin-top: 20px;
-    width: 100px;
-    height: 100px;
-    background-color: #87CEFA;
-    line-height: 100px;
-    text-align: center;
-    border-radius: 50px;
-    -webkit-border-radius:50px;
-    -moz-border-radius:50px;
-    color: white;
-    margin-left: auto;
-    margin-right: auto;
-    cursor:pointer;
-    opacity:0.5;
-}
-
-.start:hover {
-    opacity:1;
-}
-
 .ingame {
     display:none;
-    color:lightskyblue;
+    color:cornflowerblue;
 }
 
 .ingame > p {
@@ -80,4 +59,28 @@
 
 .robot {
     opacity:0.5;
+}
+
+
+.playAgain {
+    display:none;
+    margin-top: 0px;
+    width: 125px;
+    height: 125px;
+    background-color: cornflowerblue;
+    line-height: 100px;
+    text-align: center;
+    font-size-adjust: auto;
+    border-radius: 50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    cursor:pointer;
+    opacity:0.8;
+}
+
+.playAgain:hover {
+    opacity:1;
 }

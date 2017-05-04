@@ -21,14 +21,15 @@
 <div class="w3-top">
   <ul class="w3-navbar w3-wide w3-padding-9 w3-card-2">
     <li>
-      <a href="homepage.html" class="w3-margin-left"><b>TARHEEL TIC-TAC-TOE</b> </a>
+      <a href="index.html" class="w3-margin-left"><b>TARHEEL TIC-TAC-TOE</b> </a>
     </li>
     <!-- Float links to the right. Hide them on small screens -->
     <li class="w3-right w3-hide-small">
+      <a href="index.html" class="w3-left">Home</a>
       <a href="about.html" class="w3-left">About</a>
       <a href="download.html" class="w3-left">Download</a>
-      <a href="game.html" class="w3-left">Play</a>
-      <a href="index.html" class="w3-left w3-margin-right">Matching Game</a>
+      <a href="game.html" class="w3-left w3-margin-right">Play</a>
+      <a href="matching.html" class="w3-left w3-margin-right">Bonus: Matching Game!</a>
     </li>
   </ul>
 </div>
@@ -36,11 +37,12 @@
     
     
 <body>
- <br/><br/><br/><div id= totalContent><h1 id ="aboutHeader" class ="homeHeader">Let's Play!</h1>   
-    <p class ="paragraph" >Let's get Started! After you have set up the Google Chrome extension, and chosen the "mouse" option, choose if you want to begin as a novice or face the Sensei</p>   
+ <br/><br/><br/>
+    <div id= totalContent, style = "text-align:center;"><h1 id ="aboutHeader" class ="homeHeader">Let's Play!</h1>   
+    <p class ="paragraph" >Let's get Started! After you have set up the Google Chrome extension, and chosen the "mouse" option, choose if you want to begin as a Newbie or face the Sensei</p>   
     </div>  
     
-    <div class = 'main-container'>
+   <div class = 'main-container'>
             <div class = 'board'>
                 <!-- data-indx following cell divs represents cell index in 1D array representation -->
                 <div class='cell' data-indx = "0" ></div>
@@ -57,35 +59,36 @@
             <div class = 'control'>
                 <!-- div.intial displays the starting controls -->
                 <div class = 'intial'>
-                    <div class = 'difficulty'>
-						<span class = 'level not-selected' id = "level1">level1</span>
-						<span class = 'level not-selected' id = "level2">level2</span>
-						<span class = 'level not-selected' id = "level3">level3</span>
-                        <span class = 'level not-selected' id = "novice">Novice</span>
-                        <span class = 'level not-selected' id = "master">Master!</span>
+                    <div class = 'start' id='levels'> <!--<br> <br>-->
+						<button class = 'level not-selected' id = "level1" onclick="document.getElementById('hidden').style.display = 'block';">Newbie</button>
+						<button class = 'level not-selected' id = "level2" onclick="document.getElementById('hidden').style.display = 'block';">Skilled</button>
+						<button class = 'level not-selected' id = "level3" onclick="document.getElementById('hidden').style.display = 'block';">Sensei</button>
                     </div>
 
-                    <div class='start'> Start </div>
+    
                 </div>
-
+                
                 <!-- div.ingame displays in-game messages and controls -->
-                <div class = 'ingame' id="human">It's your turn ...</div>
+                <!-- <br><br> -->
+                <div class = 'ingame' id="human">It's your turn!</div>
                 <div class = 'ingame' id="ai">
                     <img src = "imgs/robot.png" id = "robot" class = "robot" />
-                    <p>Waint for it ...</p>
+                    <p>Wait for it ...</p>
                 </div>
                 <div class = 'ingame' id="won">You won !</div>
-                <div class = 'ingame' id="lost">You lost !</div>
+                <div class = 'ingame' id="lost">Let's try again!</div>
                 <div class = 'ingame' id="draw">It's a Draw</div>
+                <button id = "hidden" class = 'playAgain' onclick="myFunction()"><font size="5">Play Again!</font></button>     
+                
             </div>
-			
-			<button style = "height:300px;width:300px" onclick="myFunction()">Play Again!</button>
+           <!-- <button class = 'playAgain' onclick="myFunction()">Play Again!</button> -->
 
-			<script>
-			function myFunction() {
-				location.reload();
-			}
-			</script>
+                <script>
+                function myFunction() {
+                    location.reload();
+                }
+                </script>
+
         </div>
 		
 
@@ -94,9 +97,7 @@
         <script src = "scripts/game.js"></script>
         <script src = "scripts/ai.js"></script>
         <script src = "scripts/control.js"></script>
-     
+   
     
-        
-     
 </body>
 </html>
