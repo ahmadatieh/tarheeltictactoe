@@ -1,6 +1,33 @@
 <!DOCTYPE html>
 <html>
   <head><title>Tarheel Tic-Tac-Toe</title>
+
+
+<!-- Changes factors of the API. Fixed size of red circle-->
+<h3 id="target" style="color: red; margin: 0; padding: 0; position: fixed; left: 200; top: 200; font-size: 48;">X</h3>
+<script src="xlabs.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+var Demo = {
+
+   update : function() {
+     var x = xLabs.getConfig( "state.head.x" );
+     var y = xLabs.getConfig( "state.head.y" );
+     var targetElement = document.getElementById( "target" );
+     targetElement.style.left = ( screen.width * 0.5 ) - ( x * 300 );
+     targetElement.style.top = ( screen.height * 0.5 ) + ( y * 300 );
+   },
+
+   ready : function() {
+     xLabs.setConfig( "system.mode", "head" );
+     xLabs.setConfig( "browser.canvas.paintHeadPose", "0" );
+   }
+
+ };
+
+ xLabs.setup( Demo.ready, Demo.update, null, "myToken" );
+</script>
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
     
       
