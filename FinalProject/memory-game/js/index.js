@@ -1,8 +1,4 @@
-// Memory Game
-// © 2014 Nate Wiley
-// License -- MIT
-// best in full screen, works on phones/tablets (min height for game is 500px..) enjoy ;)
-// Follow me on Codepen
+
 
 (function(){
 	
