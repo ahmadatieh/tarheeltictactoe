@@ -3,7 +3,11 @@
 
 ///////////////////////TIC TAC TOE////////////////////////////////////////////////////////////////////
 
-COMP 580 DISCLAIMER: We adapted Mostafa Samir's code from Codepen in order to suit the website's needs. We did not create the Tic-Tac-Toe from scratch and are crediting the basic functionality to Mostafa Samir. We adapted the code in order to work on our website and modified many features in order to be more accessible. By Mostafa's request, we have included the text below: 
+COMP 580 DISCLAIMER: We adapted Mostafa Samir's code from Codepen in order to suit the website's 
+needs. We did not create the Tic-Tac-Toe from scratch and are crediting the basic 
+functionality to Mostafa Samir.We adapted the code in order to work on our website and
+modified many features in order to be more accessible. By Mostafa's request, 
+we have included the text below: 
 
 The MIT License (MIT)
 
