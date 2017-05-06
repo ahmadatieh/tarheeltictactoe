@@ -6,3 +6,5 @@ This project utilizes an open source API provided by X-labs in order to provide 
 This website is built for all individuals to play by 3 UNC Computer Science students. Mila Korobkina and Parth Patel were also the authors of this project and deserve full recognition. 
 
 This project was a semester long endeavor in order to pursue better methods of enabling technologies. We were inspired by the idea of interaction by head-tracking, so we used our newly founded computer scinece skills in order to build off of Mostafa and Nate's code to create amazing games for children with disabilities. We hope that you enjoy!
+
+The website is hosted at: http://wwwx.cs.unc.edu/Courses/comp580-s17/users/TicTacToe/
